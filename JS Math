@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+      <script>
+
+     function zero_negativity(arr) {
+    if(arr < 0){
+    return false;
+    }
+    return true;
+  }
+zero_negativity([5])
+
+
+function is_even(arr) {
+    if(arr % 2 === 0){
+    return true;
+    }
+    return false;
+  }
+is_even([4])
+
+
+function how_many_even(arr) {
+  var count = 0;
+  for(let i = 0; i< arr.length; i++){
+    if(is_even(arr[i])){
+    count ++;
+    }
+  }
+  return count
+}
+how_many_even([4, 6, 9, 2])
+
+
+function createDummyArray(num) {
+      const arr = [];
+      for (let i = 0; i < num; i++) {
+        arr.push(Math.floor(Math.random() * 10));
+      }
+      return arr;
+    }
+
+
+
+function random_choice(items){  
+return items[Math.floor(Math.random()*items.length)];
+     }
+var items = [4, 45, 12, 3, 43];
+console.log(random_choice(items));
+
+      </script>
+    </body>
+</html>
